@@ -16,20 +16,20 @@ Claude Code 的请求地址和 Codex 不一样。Claude Code 使用 `https://ai.
 
 按下列信息填写：
 
-| 配置项 | 填写内容 |
-| --- | --- |
-| 供应商名称 | `ccbug` |
-| 官网链接 | `https://ai.ccbug.cc` |
+| 配置项 | 填写内容                                    |
+| --- |-----------------------------------------|
+| 供应商名称 | `ccbug`                                 |
+| 官网链接 | `https://code.ccbug.cc`                 |
 | API Key | 创建的 Claude Code 分组 API Key，例如 `sk-xxxx` |
-| 请求地址 | `https://ai.ccbug.cc` |
+| 请求地址 | `https://code.ccbug.cc`                 |
 
-![填写 Claude Code 配置](./images/cc-switch/11-claude-provider-form.png)
+![填写 Claude Code 配置](./images/cc-switch/claude-config.png)
 
 ## 配置模型
 
 点击「获取模型列表」，然后在模型映射中下拉选择想使用的模型。
 
-![配置 Claude Code 模型映射](./images/cc-switch/12-claude-model-mapping.png)
+![配置 Claude Code 模型映射](./images/cc-switch/set-llm-model.png)
 
 参考配置如下：
 
@@ -45,4 +45,4 @@ Claude Code 的请求地址和 Codex 不一样。Claude Code 使用 `https://ai.
 
 配置保存后，在 CC Switch 的 Claude Code 列表中找到 `ccbug`，点击「启用」。
 
-![启用 Claude Code 配置](./images/cc-switch/14-enable-claude-provider.png)
+![启用 Claude Code 配置](./images/cc-switch/start-claude-config.png)
