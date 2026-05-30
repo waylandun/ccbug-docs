@@ -19,9 +19,9 @@ Use the following values:
 | Field | Value |
 | --- | --- |
 | Provider name | `ccbug` |
-| Official URL | `https://ai.ccbug.cc/` |
+| Official URL | `https://ccbug.cc/` |
 | API Key | The Codex group API Key you created, for example `sk-xxxx` |
-| API request URL | `https://ai.ccbug.cc/v1` |
+| API request URL | `https://ccbug.cc/v1` |
 | Model name | Click "Get model list", then choose the GPT / OpenAI model you need |
 
 ![Fill Codex configuration](../../guide/images/cc-switch/06-codex-provider-form.png)

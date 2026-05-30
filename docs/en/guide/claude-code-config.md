@@ -3,7 +3,7 @@
 This page explains how to add and enable the `ccbug` configuration for Claude Code in CC Switch.
 
 ::: warning Note
-The request URL for Claude Code is different from Codex. Claude Code uses `https://ai.ccbug.cc`, while Codex uses `https://ai.ccbug.cc/v1`. Do not mix them.
+The request URL for Claude Code is different from Codex. Claude Code uses `https://ccbug.cc`, while Codex uses `https://ccbug.cc/v1`. Do not mix them.
 :::
 
 ## Add A Claude Code Configuration
@@ -19,9 +19,9 @@ Use the following values:
 | Field | Value |
 | --- | --- |
 | Provider name | `ccbug` |
-| Official URL | `https://ai.ccbug.cc` |
+| Official URL | `https://ccbug.cc` |
 | API Key | The Claude Code group API Key you created, for example `sk-xxxx` |
-| Request URL | `https://ai.ccbug.cc` |
+| Request URL | `https://ccbug.cc` |
 
 ![Fill Claude Code configuration](../../guide/images/cc-switch/11-claude-provider-form.png)
 

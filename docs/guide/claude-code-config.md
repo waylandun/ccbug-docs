@@ -16,12 +16,12 @@ Claude Code 的请求地址和 Codex 不一样。Claude Code 使用 `https://ai.
 
 按下列信息填写：
 
-| 配置项 | 填写内容                                    |
-| --- |-----------------------------------------|
-| 供应商名称 | `ccbug`                                 |
-| 官网链接 | `https://code.ccbug.cc`                 |
+| 配置项 | 填写内容                               |
+| --- |------------------------------------|
+| 供应商名称 | `ccbug`                            |
+| 官网链接 | `https://ccbug.cc`                 |
 | API Key | 创建的 Claude Code 分组 API Key，例如 `sk-xxxx` |
-| 请求地址 | `https://code.ccbug.cc`                 |
+| 请求地址 | `https://ccbug.cc`                 |
 
 ![填写 Claude Code 配置](./images/cc-switch/claude-config.png)
 
