@@ -1,9 +1,11 @@
+name: ${COMPOSE_PROJECT_NAME:-az-ccbug-docs}
+
 services:
   docs:
     build:
       context: .
       dockerfile: Dockerfile
-    container_name: az-ccbug-docs
+    container_name: ${DOCS_CONTAINER_NAME:-az-ccbug-docs}
     restart: unless-stopped
     ports:
-      - "${DOCS_BIND_ADDRESS:-127.0.0.1}:${DOCS_PORT:-12355}:8088"
+      - "${DOCS_BIND_ADDRESS:-127.0.0.1}:${DOCS_PORT:-12355}:80"

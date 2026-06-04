@@ -36,7 +36,7 @@ make up
 
 默认访问地址：
 
-- `http://127.0.0.1:8080`
+- `http://127.0.0.1:12355`
 
 停止服务：
 
@@ -58,28 +58,40 @@ make logs
 docker compose up -d --build
 ```
 
+当前分支默认使用独立的 Compose project 和容器名，避免覆盖 main 分支已有部署：
+
+- `COMPOSE_PROJECT_NAME=az-ccbug-docs`
+- `DOCS_CONTAINER_NAME=az-ccbug-docs`
+- `DOCS_PORT=12355`
+
+如果要和 main 分支长期并存，建议使用不同的服务器目录，例如 main 使用 `/root/wayland/ccbug-docs`，当前分支使用 `/root/wayland/az-ccbug-docs`。
+
 ## 本地一键部署
 
 从本地机器同步到远端并触发更新：
 
 ```bash
-DEPLOY_HOST=deploy@example.com DEPLOY_PATH=/srv/ccbug-docs make deploy
+DEPLOY_HOST=deploy@example.com DEPLOY_PATH=/srv/az-ccbug-docs make deploy
 ```
 
 默认情况下，部署同步不会删除远端额外文件。如果确实需要与本地完全对齐，可显式启用：
 
 ```bash
-DEPLOY_DELETE=1 DEPLOY_HOST=deploy@example.com DEPLOY_PATH=/srv/ccbug-docs make deploy
+DEPLOY_DELETE=1 DEPLOY_HOST=deploy@example.com DEPLOY_PATH=/srv/az-ccbug-docs make deploy
 ```
 
 ## 可选环境变量
 
 - `DOCS_PORT`
-  默认值：`8080`
+  默认值：`12355`
 - `DOCS_BIND_ADDRESS`
   默认值：`127.0.0.1`
+- `COMPOSE_PROJECT_NAME`
+  默认值：`az-ccbug-docs`
+- `DOCS_CONTAINER_NAME`
+  默认值：`az-ccbug-docs`
 
-这些变量会影响 `docker-compose.yml` 中的本地绑定地址，也会由 `deploy.sh` 透传到远端 `docker compose up -d --build`。
+这些变量会影响 `docker-compose.yml` 中的 Compose project、容器名和本地绑定地址，也会由 `deploy.sh` 透传到远端 `docker compose up -d --build`。
 
 ## 宿主机 Nginx 示例
 
@@ -91,7 +103,7 @@ server {
     server_name docs.example.com;
 
     location / {
-        proxy_pass http://127.0.0.1:8080;
+        proxy_pass http://127.0.0.1:12355;
         proxy_set_header Host $host;
         proxy_set_header X-Real-IP $remote_addr;
         proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
