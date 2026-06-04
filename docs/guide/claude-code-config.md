@@ -3,7 +3,9 @@
 本文介绍如何在 CC Switch 中添加并启用 Claude Code 的 `ccbug` 配置。
 
 ::: warning 注意
-Claude Code 的请求地址和 Codex 不一样。Claude Code 使用 `https://ccbug.cc`，Codex 使用 `https://ccbug.cc/v1`，不要混用。
+Claude Code 的请求地址和 Codex 不一样。
+Claude Code 使用 `https://ccbug.cc` ！！！
+Codex 使用 `https://ccbug.cc/v1` ！！！
 :::
 
 ## 新增 Claude Code 配置
