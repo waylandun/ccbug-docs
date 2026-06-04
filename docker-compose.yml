@@ -3,7 +3,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    container_name: ccbug-docs
+    container_name: az-ccbug-docs
     restart: unless-stopped
     ports:
       - "${DOCS_BIND_ADDRESS:-127.0.0.1}:${DOCS_PORT:-12355}:80"
