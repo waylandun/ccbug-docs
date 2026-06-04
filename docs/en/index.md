@@ -5,10 +5,10 @@ layout: page
 <main class="ccbug-home">
   <section class="hero">
     <div class="hero-copy">
-      <p class="brand">ccBug - code check Bug</p>
-      <h1>Make AI Programming Simpler</h1>
+      <p class="brand">ccBug Official Relay</p>
+      <h1>Official Direct Access. Stable AI Coding.</h1>
       <p class="tagline">
-        A productivity gateway for developers · Supports Claude Code, Codex, and Gemini CLI · Ready to use, affordable, and professionally operated
+        A stable access layer for Claude Code, Codex, and Gemini CLI · Direct official API routing · Low-latency responses · Professional operations
       </p>
       <div class="actions">
         <a class="btn btn-primary" href="/en/guide/install-cc-switch">Get Started</a>
@@ -19,24 +19,24 @@ layout: page
 
   <section class="features" aria-label="Core benefits">
     <article class="feature-card">
-      <span class="feature-icon">🚀</span>
-      <h2>Ready To Use</h2>
-      <p>No complex setup. Start using high-quality AI programming tools directly.</p>
+      <span class="feature-icon">01</span>
+      <h2>Official Direct Route</h2>
+      <p>Built around official API access paths to reduce unnecessary hops for AI coding requests.</p>
     </article>
     <article class="feature-card">
-      <span class="feature-icon">💰</span>
-      <h2>Affordable</h2>
-      <p>Lower than official pricing, with multiple top-up options for different budgets.</p>
+      <span class="feature-icon">02</span>
+      <h2>Stable Availability</h2>
+      <p>Core routes are monitored continuously, with dedicated maintenance to reduce workflow interruptions.</p>
     </article>
     <article class="feature-card">
-      <span class="feature-icon">🛠️</span>
-      <h2>Professional Ops</h2>
-      <p>24/7 monitoring, dedicated maintenance, and one-on-one support for fast issue response.</p>
+      <span class="feature-icon">03</span>
+      <h2>Unified Tool Access</h2>
+      <p>One account connects Claude Code, Codex, and Gemini CLI with a clear configuration path.</p>
     </article>
     <article class="feature-card">
-      <span class="feature-icon">⚙️</span>
-      <h2>All-In-One Service</h2>
-      <p>One account for multiple tools: Claude Code, Codex, and Gemini CLI.</p>
+      <span class="feature-icon">04</span>
+      <h2>Fast, Guided Support</h2>
+      <p>From activation to troubleshooting, clear support channels help teams stay focused on code.</p>
     </article>
   </section>
 

@@ -1,45 +1,144 @@
+body:has(.ccbug-home) {
+  --vp-c-bg: #03070d;
+  --vp-c-bg-alt: #06111d;
+  --vp-c-bg-elv: #081827;
+  --vp-c-bg-soft: rgba(9, 22, 38, 0.86);
+  --vp-c-text-1: #f5fbff;
+  --vp-c-text-2: rgba(216, 232, 241, 0.74);
+  --vp-c-text-3: rgba(216, 232, 241, 0.52);
+  --vp-c-brand-1: #25f4c8;
+  --vp-c-brand-2: #49ffe0;
+  --vp-c-brand-3: #13d6b0;
+  --vp-c-brand-soft: rgba(37, 244, 200, 0.14);
+  --vp-c-border: rgba(37, 244, 200, 0.22);
+  --vp-c-divider: rgba(37, 244, 200, 0.16);
+  --vp-c-gutter: rgba(37, 244, 200, 0.16);
+  --vp-nav-bg-color: rgba(3, 7, 13, 0.92);
+  --vp-nav-screen-bg-color: #03070d;
+  --vp-local-search-bg: #06111d;
+  --vp-local-search-result-bg: rgba(9, 22, 38, 0.92);
+  --vp-local-search-result-border: rgba(37, 244, 200, 0.14);
+  --vp-local-search-result-selected-bg: rgba(37, 244, 200, 0.1);
+  --vp-local-search-result-selected-border: rgba(37, 244, 200, 0.5);
+  background: #03070d;
+}
+
+body:has(.ccbug-home) .VPNav {
+  border-bottom: 1px solid rgba(37, 244, 200, 0.2);
+  background:
+    linear-gradient(90deg, rgba(37, 244, 200, 0.08), transparent 36%),
+    rgba(3, 7, 13, 0.92);
+  backdrop-filter: blur(18px);
+}
+
+body:has(.ccbug-home) .VPNavBar,
+body:has(.ccbug-home) .VPNavBar .content,
+body:has(.ccbug-home) .VPNavBar .content-body {
+  border-bottom-color: rgba(37, 244, 200, 0.16);
+  background: transparent;
+}
+
+body:has(.ccbug-home) .VPNavBarTitle .title,
+body:has(.ccbug-home) .VPNavBarMenuLink,
+body:has(.ccbug-home) .VPNavBarMenuGroup .button,
+body:has(.ccbug-home) .VPNavBarAppearance,
+body:has(.ccbug-home) .VPSocialLink {
+  color: #f5fbff;
+}
+
+body:has(.ccbug-home) .VPNavBarMenuLink.active,
+body:has(.ccbug-home) .VPNavBarMenuLink:hover,
+body:has(.ccbug-home) .VPNavBarMenuGroup .button:hover,
+body:has(.ccbug-home) .VPSocialLink:hover {
+  color: #25f4c8;
+}
+
+body:has(.ccbug-home) .DocSearch-Button,
+body:has(.ccbug-home) .DocSearch-Button:hover,
+body:has(.ccbug-home) .VPLocalSearchBox .shell {
+  border: 1px solid rgba(37, 244, 200, 0.18);
+  background: rgba(9, 22, 38, 0.86);
+  color: rgba(216, 232, 241, 0.82);
+}
+
+body:has(.ccbug-home) .VPSwitchAppearance {
+  border-color: rgba(37, 244, 200, 0.2);
+  background: rgba(9, 22, 38, 0.86);
+}
+
+body:has(.ccbug-home) .VPFooter {
+  border-top: 1px solid rgba(37, 244, 200, 0.18);
+  background:
+    linear-gradient(rgba(37, 244, 200, 0.025) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(37, 244, 200, 0.025) 1px, transparent 1px),
+    #03070d;
+  background-size: 34px 34px, 34px 34px, auto;
+  color: rgba(216, 232, 241, 0.62);
+}
+
 .ccbug-home {
-  --home-bg: #f6f8fc;
-  --home-bg-accent: rgba(88, 108, 214, 0.14);
-  --home-brand: #5368d9;
-  --home-title: #111827;
-  --home-copy: rgba(31, 41, 55, 0.74);
-  --home-card-bg: rgba(255, 255, 255, 0.9);
-  --home-card-border: rgba(100, 116, 139, 0.16);
-  --home-icon-bg: rgba(83, 104, 217, 0.12);
-  --home-help-border: rgba(100, 116, 139, 0.2);
-  --home-mail-bg: rgba(255, 255, 255, 0.92);
-  --home-mail-border: rgba(100, 116, 139, 0.22);
-  --home-mail-icon-bg: rgba(83, 104, 217, 0.12);
-  --home-mail-icon-border: rgba(83, 104, 217, 0.24);
-  --home-mail-icon: #5368d9;
-  --home-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
+  --home-bg: #03070d;
+  --home-brand: #25f4c8;
+  --home-title: #f5fbff;
+  --home-copy: rgba(216, 232, 241, 0.76);
+  --home-card-bg: rgba(9, 22, 38, 0.78);
+  --home-card-border: rgba(37, 244, 200, 0.22);
+  --home-icon-bg: rgba(37, 244, 200, 0.1);
+  --home-help-border: rgba(37, 244, 200, 0.18);
+  --home-mail-bg: rgba(9, 22, 38, 0.82);
+  --home-mail-border: rgba(37, 244, 200, 0.26);
+  --home-mail-icon-bg: rgba(37, 244, 200, 0.1);
+  --home-mail-icon-border: rgba(37, 244, 200, 0.34);
+  --home-mail-icon: #25f4c8;
+  --home-shadow: 0 24px 70px rgba(0, 0, 0, 0.34);
   min-height: calc(100vh - var(--vp-nav-height));
   padding: 88px 24px 120px;
   box-sizing: border-box;
   background:
-    radial-gradient(circle at 76% 18%, var(--home-bg-accent), transparent 32%),
+    linear-gradient(rgba(37, 244, 200, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(37, 244, 200, 0.035) 1px, transparent 1px),
+    radial-gradient(circle at 78% 14%, rgba(32, 197, 255, 0.26), transparent 30%),
+    radial-gradient(circle at 16% 22%, rgba(37, 244, 200, 0.18), transparent 28%),
+    linear-gradient(135deg, rgba(3, 7, 13, 0.98), rgba(6, 12, 22, 0.94)),
     var(--home-bg);
+  background-size: 34px 34px, 34px 34px, auto, auto, auto, auto;
   color: var(--home-title);
   font-family: Inter, "PingFang SC", "Microsoft YaHei", sans-serif;
+  position: relative;
+  overflow: hidden;
 }
 
 html.dark .ccbug-home {
-  --home-bg: #070b14;
-  --home-bg-accent: rgba(88, 108, 214, 0.12);
-  --home-brand: #6f89ff;
-  --home-title: #f8fafc;
-  --home-copy: rgba(248, 250, 252, 0.72);
-  --home-card-bg: rgba(17, 24, 39, 0.72);
-  --home-card-border: rgba(148, 163, 184, 0.08);
-  --home-icon-bg: rgba(148, 163, 184, 0.14);
-  --home-help-border: rgba(148, 163, 184, 0.22);
-  --home-mail-bg: rgba(17, 24, 39, 0.7);
-  --home-mail-border: rgba(148, 163, 184, 0.26);
-  --home-mail-icon-bg: rgba(111, 137, 255, 0.15);
-  --home-mail-icon-border: rgba(111, 137, 255, 0.38);
-  --home-mail-icon: #7f99ff;
-  --home-shadow: none;
+  --home-bg: #03070d;
+}
+
+.ccbug-home::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(180deg, transparent, rgba(3, 7, 13, 0.46)),
+    repeating-linear-gradient(180deg, rgba(255, 255, 255, 0.025) 0, rgba(255, 255, 255, 0.025) 1px, transparent 1px, transparent 7px);
+  pointer-events: none;
+}
+
+.ccbug-home::after {
+  content: "";
+  position: absolute;
+  right: -12%;
+  top: 128px;
+  width: 44vw;
+  height: 44vw;
+  max-width: 620px;
+  max-height: 620px;
+  border: 1px solid rgba(37, 244, 200, 0.18);
+  border-radius: 999px;
+  background:
+    linear-gradient(90deg, transparent 49.8%, rgba(37, 244, 200, 0.18) 50%, transparent 50.2%),
+    linear-gradient(0deg, transparent 49.8%, rgba(37, 244, 200, 0.18) 50%, transparent 50.2%),
+    radial-gradient(circle, transparent 56%, rgba(37, 244, 200, 0.12) 56.5%, transparent 57%);
+  opacity: 0.72;
+  pointer-events: none;
 }
 
 .ccbug-home .hero,
@@ -47,40 +146,62 @@ html.dark .ccbug-home {
 .ccbug-home .help {
   width: min(1152px, 100%);
   margin: 0 auto;
+  position: relative;
+  z-index: 1;
 }
 
 .ccbug-home .hero {
-  min-height: 318px;
+  min-height: 374px;
   display: flex;
   align-items: flex-start;
 }
 
 .ccbug-home .hero-copy {
-  max-width: 560px;
+  max-width: 760px;
 }
 
 .ccbug-home .brand {
-  margin: 0 0 6px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0 0 16px;
+  padding: 8px 12px;
+  border: 1px solid rgba(37, 244, 200, 0.24);
+  border-radius: 6px;
+  background: rgba(37, 244, 200, 0.08);
   color: var(--home-brand);
-  font-size: clamp(44px, 5vw, 60px);
-  line-height: 1.05;
+  box-shadow: 0 0 26px rgba(37, 244, 200, 0.12);
+  font-size: 13px;
+  line-height: 1;
   font-weight: 800;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.ccbug-home .brand::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 999px;
+  background: var(--home-brand);
+  box-shadow: 0 0 18px rgba(37, 244, 200, 0.9);
 }
 
 .ccbug-home .hero h1 {
   margin: 0;
   color: var(--home-title);
-  font-size: clamp(42px, 5vw, 58px);
-  line-height: 1.12;
+  font-size: clamp(44px, 6vw, 78px);
+  line-height: 1.04;
   font-weight: 800;
+  text-shadow: 0 0 32px rgba(37, 244, 200, 0.16);
 }
 
 .ccbug-home .tagline {
-  margin: 22px 0 0;
-  max-width: 600px;
+  margin: 24px 0 0;
+  max-width: 720px;
   color: var(--home-copy);
-  font-size: 24px;
-  line-height: 1.45;
+  font-size: 21px;
+  line-height: 1.62;
   font-weight: 650;
 }
 
@@ -98,20 +219,31 @@ html.dark .ccbug-home {
   min-width: 98px;
   min-height: 40px;
   padding: 0 24px;
-  border-radius: 999px;
+  border: 1px solid transparent;
+  border-radius: 6px;
   color: #fff;
   font-size: 14px;
   font-weight: 800;
   text-decoration: none;
   box-sizing: border-box;
+  transition: transform 0.18s ease, border-color 0.18s ease, box-shadow 0.18s ease;
+}
+
+.ccbug-home .btn:hover {
+  transform: translateY(-2px);
+  text-decoration: none;
 }
 
 .ccbug-home .btn-primary {
-  background: linear-gradient(135deg, #6779e9, #9a82ff);
+  border-color: rgba(37, 244, 200, 0.42);
+  background: linear-gradient(135deg, #13d6b0, #169cff);
+  box-shadow: 0 12px 30px rgba(22, 156, 255, 0.22);
 }
 
 .ccbug-home .btn-success {
-  background: #20c263;
+  border-color: rgba(245, 251, 255, 0.18);
+  background: rgba(245, 251, 255, 0.08);
+  color: var(--home-title);
 }
 
 .ccbug-home .features {
@@ -129,6 +261,18 @@ html.dark .ccbug-home {
   background: var(--home-card-bg);
   box-shadow: var(--home-shadow);
   box-sizing: border-box;
+  backdrop-filter: blur(18px);
+  position: relative;
+  overflow: hidden;
+}
+
+.ccbug-home .feature-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  background: linear-gradient(135deg, rgba(37, 244, 200, 0.08), transparent 42%);
+  pointer-events: none;
 }
 
 .ccbug-home .feature-icon {
@@ -138,8 +282,11 @@ html.dark .ccbug-home {
   align-items: center;
   justify-content: center;
   border-radius: 6px;
+  border: 1px solid rgba(37, 244, 200, 0.22);
   background: var(--home-icon-bg);
-  font-size: 24px;
+  color: var(--home-brand);
+  font-size: 14px;
+  font-weight: 900;
 }
 
 .ccbug-home .feature-card h2 {
@@ -199,6 +346,7 @@ html.dark .ccbug-home {
   text-align: left;
   text-decoration: none;
   box-sizing: border-box;
+  backdrop-filter: blur(18px);
 }
 
 .ccbug-home .mail-icon {
@@ -232,7 +380,7 @@ html.dark .ccbug-home {
 }
 
 .ccbug-home .mail-arrow {
-  color: var(--home-copy);
+  color: var(--home-brand);
   font-size: 22px;
   text-align: right;
 }
@@ -257,7 +405,7 @@ html.dark .ccbug-home {
   }
 
   .ccbug-home .brand {
-    font-size: 42px;
+    font-size: 12px;
   }
 
   .ccbug-home .hero h1 {
@@ -265,7 +413,14 @@ html.dark .ccbug-home {
   }
 
   .ccbug-home .tagline {
-    font-size: 19px;
+    font-size: 18px;
+  }
+
+  .ccbug-home::after {
+    width: 82vw;
+    height: 82vw;
+    right: -36%;
+    top: 96px;
   }
 
   .ccbug-home .features {
@@ -274,7 +429,7 @@ html.dark .ccbug-home {
   }
 
   .ccbug-home .mail-card {
-    grid-template-columns: 44px minmax(0, 1fr) 18px;
+    grid-template-columns: 44px minmax(0, 1fr) 24px;
     gap: 14px;
     padding: 18px;
   }
