@@ -12,7 +12,7 @@ layout: page
       </p>
       <div class="actions">
         <a class="btn btn-primary" href="/guide/install-cc-switch">开始使用</a>
-        <a class="btn btn-success" href="https://ccbug.cc" target="_blank" rel="noreferrer">前往官网</a>
+        <a class="btn btn-success" href="https://ai.ccbug.cc" target="_blank" rel="noreferrer">前往官网</a>
       </div>
     </div>
   </section>
