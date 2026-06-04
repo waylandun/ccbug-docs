@@ -16,12 +16,12 @@ Codex 分组的 Key 只能用于请求 OpenAI / GPT 相关模型。Claude Code �
 
 按下列信息填写：
 
-| 配置项 | 填写内容                     |
-| --- |--------------------------|
-| 供应商名称 | `ccbug`                  |
-| 官网链接 | `https://ccbug.cc/`      |
-| API Key | 创建的 Codex 分组 API Key，例如 `sk-xxxx` |
-| API 请求地址 | `https://ccbug.cc/v1`    |
+| 配置项 | 填写内容                               |
+| --- |------------------------------------|
+| 供应商名称 | `ccbug`                            |
+| 官网链接 | `https://ai.ccbug.cc`              |
+| API Key | 创建的 Codex 分组 API Key，例如 `sk-xxxx`  |
+| API 请求地址 | `https://ai.ccbug.cc/v1`           |
 | 模型名称 | 点击「获取模型列表」后选择需要使用的 GPT / OpenAI 模型 |
 
 ![填写 Codex 配置](./images/cc-switch/codex-config.png)
