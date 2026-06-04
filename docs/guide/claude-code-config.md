@@ -4,8 +4,10 @@
 
 ::: warning 注意
 Claude Code 的请求地址和 Codex 不一样。
-Claude Code 使用 `https://ccbug.cc` ！！！
-Codex 使用 `https://ccbug.cc/v1` ！！！
+
+⚠️ Claude Code 使用 `https://ccbug.cc`
+
+⚠️ Codex 使用 `https://ccbug.cc/v1`
 :::
 
 ## 新增 Claude Code 配置

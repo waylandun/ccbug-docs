@@ -7,8 +7,7 @@ const zhGuideSidebar = [
       { text: "安装 CC Switch", link: "/guide/install-cc-switch" },
       { text: "创建 API Key", link: "/guide/create-api-key" },
       { text: "Codex 配置", link: "/guide/codex-config" },
-      { text: "Claude Code 配置", link: "/guide/claude-code-config" },
-      { text: "部署说明", link: "/guide/deployment" }
+      { text: "Claude Code 配置", link: "/guide/claude-code-config" }
     ]
   }
 ];
@@ -20,8 +19,7 @@ const enGuideSidebar = [
       { text: "Install CC Switch", link: "/en/guide/install-cc-switch" },
       { text: "Create API Key", link: "/en/guide/create-api-key" },
       { text: "Codex Config", link: "/en/guide/codex-config" },
-      { text: "Claude Code Config", link: "/en/guide/claude-code-config" },
-      { text: "Deployment", link: "/en/guide/deployment" }
+      { text: "Claude Code Config", link: "/en/guide/claude-code-config" }
     ]
   }
 ];
